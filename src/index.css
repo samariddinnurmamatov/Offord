@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.header_scrolled{
+  background-color: white;
+  z-index: 999;
+  transition: .5s;
+   box-shadow: 0px 18px 27px -20px rgba(34, 60, 80, 0.102);
+}
+
+.container {
+  width: 100% !important;
+  max-width: 1100px !important;
+  margin: 0 auto;
+  @apply px-[13px];
+}
+
+.all-text_font{
+  font-family: Comic Sans MS; 
+}
+
+.text-decoration {
+  text-decoration: underline; /* Yoki istalgan kerakli stil */
+}
+
+.bgrang{
+  background: rgba(128, 128, 128, 0.019);
+}
+.bgclients{
+  background-color: rgba(128, 128, 128, 0.059);
+  padding: 85px 0;
+}
+
+.as {
+  transition: 0.9s;
+  animation: float 3.9s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(1.9rem);
+  }
+}
+
+.slick-dots li.slick-active button::before{
+  color: #8643DC;
+}
+
+.bacground_serv{
+  background-color: rgba(128, 128, 128, 0.032);
+}
